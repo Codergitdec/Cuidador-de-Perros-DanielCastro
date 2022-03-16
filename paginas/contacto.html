@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contacto</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!-- fila de logotipo + nav --> 
+	<div class="grid template-areas justify-items align-items">
+		
+		<nav class="navLogo" id="superior">
+			<a href="../index.html">
+				<img src="../imagenes/logo.png" alt="logo cuidador de perros" class="logo">
+			</a>
+			<ul class="navUl">
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="../index.html#Acerca-de-mi">Acerca de mí</a></li>
+				<li><a href="../paginas/mis-servicios.html">Servicios</a></li>
+				<li><a href="../paginas/promociones.html">Promos</a></li>
+				<li><a href="../paginas/ubicacion.html">Ubicación</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				
+			</ul>
+		</nav>
+		<!-- final nav -->
+	<header id="header">
+		<img src="../imagenes/titulo1.png" alt="titulo" class="w-100">
+	</header>
+
+<!-- cierre de fila logotipo + nav -->
+	<main class="text-center" id="centro">
+		<section>
+<!-- inicio del form -->
+			
+				<div class="descripcion">
+				<form id="Contacto">
+					<fieldset>
+						<legend>Datos del solicitante</legend>
+					<div>Sexo</div>
+					<label>
+    						<input type="radio" name="sexo" value="hombre" /> hombre    
+
+    						<input type="radio" name="sexo" value="mujer" /> mujer	
+    				</label>
+    						<br> <br>
+    				<label for="nombre">Nombre y Apellido:</label>	<br>
+    						<input type="text" name="nombre" id="nombre" />
+    						<br>
+    				<label for="email">email:</label>
+    				<input type="email" placeholder="email@pepeargento.com" name="email" id="email">
+    						<br><br>
+ 					</fieldset>
+
+ 					<fieldset> 	
+ 							<div>Desea recibir Newsletter nuestros?
+							<input type="checkbox" name="acepta" value="1" id="Newsletter">
+							</div>
+							<br>
+
+ 						<legend>Servicios solicitados</legend>					
+						<label	for="Servicios">Servicios:	</label>
+    					<select name="Servicios">
+    							<option value="PyS">Paseo y ejercicios</option>
+   								<option value="HyC">Higiene y cuidados</option>
+    	
+  						</select>
+							<br> <br>
+					<label for="consulta">Dejanos tu consulta </label>
+					<textarea name="consulta" id="consulta" cols="20" rows="5" placeholder="deja aqui tu consulta"></textarea>
+
+  						<button	type="submit">Enviar</button>
+  						<button	type="reset">Cancelar</button>
+					</fieldset>
+				</form>
+				</div>
+			
+			
+<!-- final del form -->
+		</section>
+	</main>
+
+<!-- inicio de footer --> 
+			<footer id="pie" class="pie">
+		<h3>&#64; 2022 Dany cuidador de perros
+		 - cel. +541112345678</h3>
+		
+		<a href="https://facebook.com" target="_blank">
+			<img src="../imagenes/facebook.png" alt="facebook">
+		</a>
+		<a href="https://twitter.com" target="_blank">
+			<img src="../imagenes/twitter.png" alt="twitter">
+		</a>
+	</footer>
+	<!-- final de footer -->
+
+</div>
+</body>
+</html>

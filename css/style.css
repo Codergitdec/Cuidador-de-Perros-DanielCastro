@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+*{
+	font-family: tohama, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-image: url(../imagenes/huellas-fondo.jpg);
+	background-attachment: fixed; /*fondo fijo */
+	overflow: auto;
+}
+
+h4{
+	color: black;
+	font-size: 2rem;
+	line-height: 4.5rem;
+}
+
+nav {
+	background: grey;
+	position: sticky;
+}
+nav a img{
+	padding: 10px;
+}
+nav ul{
+	list-style: none; /* sin vineta*/
+	
+}
+nav ul li a{
+	
+	color: white;
+	text-decoration: none;
+
+}
+
+
+section p{
+	color: #656161;
+	font-weight: 600;
+	font-size: 1.2rem;
+	line-height: 2rem;
+	margin-left: 10px;
+}
+
+section img{
+	border: solid 2px black;
+	width: 20%;
+}
+
+
+footer {
+	background: grey;
+	display: inline-block;
+	width: 100%;
+
+  
+ 
+	}
+h3{
+	color: white;
+	font-size: 1rem; /*tamaño textp footer*/
+	display: inline-block;
+	padding-top: 5px;
+}
+
+footer a img{
+		padding-top: 5px;
+		width: 50%;
+
+
+	}
+.text-center{
+	text-align: center;
+}
+.text-italic{
+	font-style: italic;
+}
+.text-left{
+	text-align: left;
+
+}
+.w-100{
+	width: 100%;
+}
+
+form{
+	width:250px;
+	padding:10px;
+	margin:auto;
+	background-color:#656161;
+}
+
+form label{
+	width:150px;
+	font-weight:bold;
+	display:inline-block;
+	
+}
+form fieldset {
+	font-size: 1rem;
+}
+
+textarea{
+	width:80%;
+	height:50px;
+	background-color:whitesmoke;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+}
+
+table tr th{
+	color: #656161;
+	font-size: 1rem;
+	border:1px solid grey;
+	background-color: #dfcccc;
+}
+
+table tr th ol li{
+	width:100px;
+	height:20px;
+
+}
+iframe{
+	padding: 20px;
+	border: 2px solid black;
+	width: 50%;
+
+}
+
+/*inicia agregado grid y flex*/
+.grid{
+	width: 99%;
+	display: grid;
+}
+
+.template-areas{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "nav" 
+	"header" 
+	"centro" 
+	"footer";
+
+}
+
+#superior{
+	grid-area: nav;
+}
+
+#header{
+	grid-area: header;
+
+}
+#centro{
+	grid-area: centro;
+}
+
+#pie{
+	grid-area: footer;
+}
+
+.justify-items{
+align-items: center;
+
+}
+.align-items{
+	align-items: center;
+}
+.navLogo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     c
+}
+.logo{
+	width: 4rem;
+}
+.navUl{
+
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	font-size: .8rem;
+	padding-bottom: 10px;
+	list-style: none;
+
+}
+
+.tabla-promociones{
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+	margin-bottom: 50px;
+	
+}
+
+.pie{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.artimg{
+	width: 50%;
+}
+
+
+@media (min-width:768px){
+	.template-areas{
+		grid-template-columns: 60vw 40vw;
+		grid-template-columns: repet(4, auto);
+		grid-template-areas: "nav nav"
+		"header header"
+		"centro centro"
+		"footer footer"
+	}
+
+h4{
+	color: black;
+	font-size: 3rem;
+	line-height: 4.5rem;
+}
+
+section p{
+	
+	font-weight: 600;
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+	margin-left: 10px;
+}
+section img{
+	border: solid 2px blue;
+	width: 40%;
+}
+
+.navLogo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     c
+}
+.logo{
+	width: 6rem;
+}
+.navUl{
+	font-size: 1.3rem;
+	list-style: none;
+
+}
+#centro .articulo{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+h3{
+	color: white;
+	font-size: 2rem; /*tamaño textp footer*/
+	display: inline-block;
+	padding-top: 20px;
+}
+table tr th{
+	color: #656161;
+	font-size: 1.2rem;
+	border:1px solid grey;
+	background-color: #dfcccc;
+}
+
+table tr th ol li{
+	width:150px;
+	height:25px;
+
+}
+
+footer a img{
+		padding-top: 5px;
+		width: 80%;
+
+	}
+
+form{
+	width:500px;
+	padding:10px;
+	margin:auto;
+	background-color:#656161;
+}
+
+form label{
+	width:150px;
+	font-weight:bold;
+	display:inline-block;
+	
+}
+form fieldset {
+	font-size: 1.2rem;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	background-color:whitesmoke;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+}
+
+@media (min-width:1024px){
+
+	.navLogo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     c
+}
+.navUl{
+	font-size: 2.2rem;
+	list-style: none;
+	}
+.logo{
+	width: 8rem;
+}
+
+table tr th{
+	color: #656161;
+	font-size: 2rem;
+	border:1px solid grey;
+	background-color: #dfcccc;
+}
+
+table tr th ol li{
+	width:200px;
+	height:30px;
+
+}
+
+
+}
