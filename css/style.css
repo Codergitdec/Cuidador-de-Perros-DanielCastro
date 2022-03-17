@@ -42,7 +42,7 @@ nav ul li a{
 
 
 section p{
-	color: #656161;
+	color: black;
 	font-weight: 600;
 	font-size: 1.2rem;
 	line-height: 2rem;
@@ -213,6 +213,66 @@ align-items: center;
 }
 
 
+		
+	/*gradiente fondo*/
+#centro {
+background-image: linear-gradient(rgb(70, 70, 70), rgb(230, 230, 230));
+}
+       /*fin gradiente fondo*/
+
+.logo{
+	width: 4rem;
+}
+
+
+/*transicion nav*/
+		.navLogo ul li a:hover{
+			color: blueviolet;
+			font-weight: 600;
+		
+		}
+/*fin transicion nav*/
+
+/*transicion footer*/
+		h3:hover{
+			color: blueviolet;
+			font-weight: 600;
+			transition: 2s;
+		
+		}
+/*fin transicion footer*/
+
+/*transicion logo*/		
+		.logo:hover{
+			width: 6rem;
+			transition: width 1s;
+		}
+/*fin transicion logo*/
+
+/*animacion de texto Acerca de mi*/
+h4 {
+animation-duration: 3s;
+animation-name:acerca-de-mi;
+animation-iteration-count: 5;
+}
+@keyframes acerca-de-mi {
+0% {
+opacity: 0;
+color: white;
+font-size: 1rem;
+}
+100% {
+opacity: 1;
+color: blue;
+font-size: 3rem;
+}
+}
+
+/*fin animacion de texto Acerca de mi*/
+
+
+
+
 @media (min-width:768px){
 	.template-areas{
 		grid-template-columns: 60vw 40vw;
@@ -250,6 +310,14 @@ section img{
 .logo{
 	width: 6rem;
 }
+
+/*transicion logo*/
+.logo:hover{
+	width: 8rem;
+}
+
+/*fin transicon logo*/
+
 .navUl{
 	font-size: 1.3rem;
 	list-style: none;
@@ -328,6 +396,14 @@ textarea{
 	width: 8rem;
 }
 
+/*transicion logo*/
+.logo:hover{
+	width: 10rem;
+}
+
+/*fin transicon logo*/
+
+
 table tr th{
 	color: #656161;
 	font-size: 2rem;
@@ -340,6 +416,9 @@ table tr th ol li{
 	height:30px;
 
 }
+
+
+
 
 
 }
