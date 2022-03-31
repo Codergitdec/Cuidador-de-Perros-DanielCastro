@@ -1,0 +1,17 @@
+.pie{
+	display: flex;
+	flex-direction: row;
+	background: grey;
+	justify-content: space-evenly;
+
+	h3{
+		color: white;
+		display: inline-block;
+		padding-top: 5px;
+		font-size: $textSm;
+	}
+	img{
+		padding-top: 5px;
+		//width: $w-25;
+	}
+}

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+.navLogo {
+  background-color: grey;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly; }
+  .navLogo img {
+    width: 50%; }
+  .navLogo ul {
+    display: flex; }
+    .navLogo ul li {
+      list-style: none;
+      font-family: "Open Sans", sans-serif;
+      display: inline;
+      text-align: center;
+      margin: 0 50px 0 0; }
+      .navLogo ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1em; }
+
+.header img {
+  width: 100%; }
+
+.text-center h4 {
+  color: black;
+  text-align: center;
+  font-size: 2em;
+  align-items: center; }
+
+.text-center .articulo {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.text-center p {
+  color: black;
+  font-weight: 600;
+  font-size: 1em;
+  font-style: italic;
+  line-height: 2rem;
+  margin-left: 10px;
+  font-family: "Tangerine", cursive; }
+
+.text-center img {
+  width: 50%; }
+
+.pie {
+  display: flex;
+  flex-direction: row;
+  background: grey;
+  justify-content: space-evenly; }
+  .pie h3 {
+    color: white;
+    display: inline-block;
+    padding-top: 5px;
+    font-size: 1em; }
+  .pie img {
+    padding-top: 5px; }

@@ -22,6 +22,23 @@ h4{
 	line-height: 4.5rem;
 }
 
+nav {
+	background: grey;
+	position: sticky;
+}
+nav a img{
+	padding: 10px;
+}
+nav ul{
+	list-style: none; /* sin vineta*/
+	
+}
+nav ul li a{
+	
+	color: white;
+	text-decoration: none;
+
+}
 
 
 section p{
@@ -38,6 +55,14 @@ section img{
 }
 
 
+footer {
+	background: grey;
+	display: inline-block;
+	width: 100%;
+
+  
+ 
+	}
 h3{
 	color: white;
 	font-size: 1rem; /*tamaño textp footer*/
@@ -45,6 +70,12 @@ h3{
 	padding-top: 5px;
 }
 
+footer a img{
+		padding-top: 5px;
+		width: 50%;
+
+
+	}
 .text-center{
 	text-align: center;
 }
@@ -85,6 +116,18 @@ textarea{
 	display:block;
 }
 
+table tr th{
+	color: #656161;
+	font-size: 1rem;
+	border:1px solid grey;
+	background-color: #dfcccc;
+}
+
+table tr th ol li{
+	width:100px;
+	height:20px;
+
+}
 iframe{
 	padding: 20px;
 	border: 2px solid black;
@@ -132,8 +175,33 @@ align-items: center;
 .align-items{
 	align-items: center;
 }
+.navLogo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     c
+}
+.logo{
+	width: 4rem;
+}
+.navUl{
 
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	font-size: .8rem;
+	padding-bottom: 10px;
+	list-style: none;
 
+}
+
+.tabla-promociones{
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+	margin-bottom: 50px;
+	
+}
 
 .pie{
 	display: flex;
@@ -142,13 +210,23 @@ align-items: center;
 }
 .artimg{
 	width: 50%;
-
 }
 
 
+		
+	/*gradiente fondo*/
+#centro {
+background-image: linear-gradient(rgb(70, 70, 70), rgb(230, 230, 230));
+}
+       /*fin gradiente fondo*/
+
+.logo{
+	width: 4rem;
+}
+
 
 /*transicion nav*/
-/*		.navLogo ul li a:hover{
+		.navLogo ul li a:hover{
 			color: blueviolet;
 			font-weight: 600;
 		
@@ -164,13 +242,18 @@ align-items: center;
 		}
 /*fin transicion footer*/
 
+/*transicion logo*/		
+		.logo:hover{
+			width: 6rem;
+			transition: width 1s;
+		}
+/*fin transicion logo*/
 
 /*animacion de texto Acerca de mi*/
 h4 {
 animation-duration: 3s;
 animation-name:acerca-de-mi;
 animation-iteration-count: 5;
-text-align: center;
 }
 @keyframes acerca-de-mi {
 0% {
@@ -216,9 +299,30 @@ section p{
 section img{
 	border: solid 2px blue;
 	width: 40%;
-
 }
 
+.navLogo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     c
+}
+.logo{
+	width: 6rem;
+}
+
+/*transicion logo*/
+.logo:hover{
+	width: 8rem;
+}
+
+/*fin transicon logo*/
+
+.navUl{
+	font-size: 1.3rem;
+	list-style: none;
+
+}
 #centro .articulo{
 		display: flex;
 		flex-direction: row;
@@ -231,35 +335,90 @@ h3{
 	display: inline-block;
 	padding-top: 20px;
 }
-table tbody{
-	
-	font-size: 2rem;
-	
+table tr th{
+	color: #656161;
+	font-size: 1.2rem;
+	border:1px solid grey;
+	background-color: #dfcccc;
+}
+
+table tr th ol li{
+	width:150px;
+	height:25px;
 
 }
-table thead{
 
-	font-size: 2rem;
+footer a img{
+		padding-top: 5px;
+		width: 80%;
 
-
-
-}
+	}
 
 form{
 	width:500px;
 	padding:10px;
-	font-size: 1.2rem;
 	margin:auto;
 	background-color:#656161;
 }
 
+form label{
+	width:150px;
+	font-weight:bold;
+	display:inline-block;
+	
+}
+form fieldset {
+	font-size: 1.2rem;
+}
 
-/*@media (min-width:1024px){
+textarea{
+	width:100%;
+	height:100px;
+	background-color:whitesmoke;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+}
+
+@media (min-width:1024px){
+
+	.navLogo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     c
+}
+.navUl{
+	font-size: 2.2rem;
+	list-style: none;
+	}
+.logo{
+	width: 8rem;
+}
+
+/*transicion logo*/
+.logo:hover{
+	width: 10rem;
+}
+
+/*fin transicon logo*/
+
+
+table tr th{
+	color: #656161;
+	font-size: 2rem;
+	border:1px solid grey;
+	background-color: #dfcccc;
+}
+
+table tr th ol li{
+	width:200px;
+	height:30px;
+
+}
 
 
 
 
 
-
-
-}*/
+}

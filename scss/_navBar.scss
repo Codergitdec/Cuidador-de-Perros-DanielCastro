@@ -1,0 +1,33 @@
+.navLogo{
+	background-color:$mainColor;
+	padding: 10px;
+	//position: sticky;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+
+	img{
+		//padding:10px;
+		width: $w-50;
+	}
+	ul{
+		display: flex;
+		//position: sticky;
+		
+		li{
+			list-style: none;
+			font-family: $fontMain;
+			display: inline;
+			text-align: center;
+			margin: 0 50px 0 0;
+			
+			a{
+				color: white;
+				text-decoration: none;
+				font-size: $textSm;
+				
+			}
+		}
+	}
+}
