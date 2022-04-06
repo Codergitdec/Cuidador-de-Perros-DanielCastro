@@ -1,11 +1,3 @@
-.header{
-	img{
-		width: 100%;
-	
-}
-
-
-
 .text-center{
 	h4{
 		color: black;
@@ -15,9 +7,10 @@
 	
 }
 .articulo{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	.mix {
+	@include flex-row-align;
+	}
+
 	}
 	p{
 	color: black;
@@ -31,4 +24,5 @@
 	img{
 		width: $w-50;
 	}
+
 }

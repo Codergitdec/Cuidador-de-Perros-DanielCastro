@@ -3,10 +3,25 @@
 //$mainColor:rgba(288,188,2471,.5);
 $mainColor:grey;
 $secondaryColor:rgba(238,188,2471, .7);
-$keyColor: deeppink;
+$keyColor: black;
 
 //sizing
 $w-100:100%;
 $w-50:50%;
 $w-25:25%;
 
+
+//mixing
+@mixin flex-row-align{
+display:flex;
+flex-direction:row;
+align-items:center;
+}
+
+
+$tipoTexto: (
+color: white,
+//centro: center,
+top: 20px,
+size: 1rem
+);

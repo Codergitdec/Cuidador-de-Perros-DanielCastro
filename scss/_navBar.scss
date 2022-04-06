@@ -1,19 +1,21 @@
 .navLogo{
-	background-color:$mainColor;
+	background-color:grey;
 	padding: 10px;
 	//position: sticky;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	.mix {
+	@include flex-row-align;
+	}
+
 	justify-content: space-evenly;
 
 	img{
-		//padding:10px;
+		
 		width: $w-50;
 	}
 	ul{
 		display: flex;
-		//position: sticky;
+		font-size: $textSm !important;
+		
 		
 		li{
 			list-style: none;
@@ -25,7 +27,7 @@
 			a{
 				color: white;
 				text-decoration: none;
-				font-size: $textSm;
+				
 				
 			}
 		}

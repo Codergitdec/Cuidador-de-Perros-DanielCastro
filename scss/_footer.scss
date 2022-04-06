@@ -4,14 +4,19 @@
 	background: grey;
 	justify-content: space-evenly;
 
-	h3{
-		color: white;
-		display: inline-block;
-		padding-top: 5px;
-		font-size: $textSm;
-	}
+
+h3{
+	display: inline-block;
+color: map-get($tipoTexto, color);
+//text-align: map-get($tipoTexto, centro);
+padding-top: map-get($tipoTexto, top);
+font-size:map-get($tipoTexto, size);
+}
+
 	img{
 		padding-top: 5px;
-		//width: $w-25;
-	}
+		}
+
+
+
 }
