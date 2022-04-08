@@ -1,0 +1,41 @@
+.centro{
+	background-image: url(../imagenes/huellas-fondo.jpg);
+	background-attachment: fixed; /*fondo fijo */
+	overflow: auto;
+
+}
+.text-center{
+	h4{
+		color: black;
+		text-align: center;
+		font-size: $textMd;
+		align-items: center;
+	
+}
+.articulo{
+	.mix {
+	@include flex-row-align;
+	}
+
+	}
+	p{
+	color: black;
+	font-weight: 600;
+	font-size: $textSm;
+	font-style: italic;
+	line-height: 2rem;
+	margin-left: 10px;
+	font-family: $fontSecondary;	
+	}
+	img{
+		width: $w-50;
+	}
+
+}
+.mapaubicacion{
+		padding: 20px;
+		border: 2px solid black;
+		width: $w-50;
+
+
+}

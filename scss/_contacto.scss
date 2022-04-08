@@ -1,0 +1,49 @@
+.text-center{
+	form{
+	width:50%;
+	padding:10px;
+	margin:auto;
+	border: 2px solid black;
+	background-color:grey;
+}
+	form label{
+	width:50%;
+	display:inline-block;
+	
+}
+	form fieldset {
+	font-size: $textSm;
+}
+	textarea{
+	width:80%;
+	height:30%;
+	background-color:whitesmoke;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+}
+
+
+}
+.boton {
+	display: flex;
+	width:20%;
+	height:30%;
+	margin: auto;
+	background-color:white;
+	text-align:center;
+	justify-content: center;
+	color:black;
+	border-radius:20px;
+	border:1px solid black;
+}
+.boton-enviar {
+	@extend .boton;
+	background-color:#108EFF;
+	color:white;
+}
+.boton-cancelar {
+	@extend .boton;
+	background-color:darkgrey;
+	color:white;
+}

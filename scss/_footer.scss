@@ -1,0 +1,21 @@
+.pie{
+	display: flex;
+	flex-direction: row;
+	background: grey;
+	justify-content: space-evenly;
+
+
+h3{
+	display: inline-block;
+color: map-get($tipoTexto, color);
+padding-top: map-get($tipoTexto, top);
+font-size:map-get($tipoTexto, size);
+}
+
+	img{
+		padding-top: 5px;
+		}
+
+
+
+}
