@@ -1,0 +1,17 @@
+{
+  "name": "Cuidador de perros",
+  "version": "1.0.0",
+  "description": "Página web que ofrece servicios de cuidados, paseos e higiene de perros ubicada en Capital Federal. Contamos con 20 años de experiencia en el cuidado de mascotas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm     run build-css\""
+  },
+  "author": "Daniel Castro",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

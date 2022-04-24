@@ -1,0 +1,35 @@
+.navLogo{
+	background-color:grey;
+	padding: 10px;
+	//position: sticky;
+	.mix {
+	@include flex-row-align;
+	}
+
+	justify-content: space-evenly;
+
+	img{
+		
+		width: $w-50;
+	}
+	ul{
+		display: flex;
+		font-size: $textSm !important;
+		
+		
+		li{
+			list-style: none;
+			font-family: $fontMain;
+			display: inline;
+			text-align: center;
+			margin: 0 50px 0 0;
+			
+			a{
+				color: white;
+				text-decoration: none;
+				
+				
+			}
+		}
+	}
+}
